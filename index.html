@@ -14,13 +14,13 @@
 body { background: #0f1019; }
 
 /* 全局字体放大基准 */
-.deck { font-size: 22px; }
-.deck .kicker { font-size: 20px !important; }
-.deck .h2 { font-size: 52px !important; }
-.deck .h1 { font-size: 68px !important; }
-.deck .lede { font-size: 26px !important; }
-.deck .eyebrow { font-size: 20px !important; }
-.deck .card { font-size: 20px; }
+.deck { font-size: 28px; }
+.deck .kicker { font-size: 24px !important; }
+.deck .h2 { font-size: 60px !important; }
+.deck .h1 { font-size: 80px !important; }
+.deck .lede { font-size: 32px !important; }
+.deck .eyebrow { font-size: 24px !important; }
+.deck .card { font-size: 24px; }
 .deck .stack > .card { padding: 18px 22px; }
 
 /* 封面 */
@@ -38,8 +38,8 @@ body { background: #0f1019; }
   height: 100%; display: flex; flex-direction: column;
   justify-content: center; padding: 56px 72px;
 }
-.cover-slide .h1 { font-size: 96px; line-height: 1.05; }
-.cover-slide .lede { font-size: 32px; max-width: 50ch; }
+.cover-slide .h1 { font-size: 108px; line-height: 1.05; }
+.cover-slide .lede { font-size: 38px; max-width: 50ch; }
 
 /* 科技感流程节点 */
 .tech-flow { display: flex; align-items: center; gap: 10px; margin-top: 36px; }
@@ -57,10 +57,10 @@ body { background: #0f1019; }
 }
 .tech-flow .node:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .tech-flow .node:hover::before { opacity: 1; }
-.tech-flow .node .ic { font-size: 48px; margin-bottom: 8px; display: block; }
-.tech-flow .node h4 { font-size: 22px; margin: 0 0 4px; color: var(--text-1); }
-.tech-flow .node p { font-size: 17px; color: var(--text-3); margin: 0; line-height: 1.4; }
-.tech-flow .arr { font-size: 32px; color: var(--accent); flex-shrink: 0; }
+.tech-flow .node .ic { font-size: 52px; margin-bottom: 8px; display: block; }
+.tech-flow .node h4 { font-size: 26px; margin: 0 0 4px; color: var(--text-1); }
+.tech-flow .node p { font-size: 20px; color: var(--text-3); margin: 0; line-height: 1.4; }
+.tech-flow .arr { font-size: 36px; color: var(--accent); flex-shrink: 0; }
 .tech-flow .node.hl { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(122,162,247,.15), var(--shadow-lg); }
 .tech-flow .node.hl::before { opacity: 1; }
 
@@ -75,15 +75,15 @@ body { background: #0f1019; }
 .glass-step:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
 .glass-step .num {
   position: absolute; top: -16px; left: 20px;
-  width: 48px; height: 48px; border-radius: 50%;
+  width: 52px; height: 52px; border-radius: 50%;
   background: var(--accent); color: #1a1b26;
   display: flex; align-items: center; justify-content: center;
-  font-weight: 800; font-size: 20px; box-shadow: 0 0 20px rgba(122,162,247,.4);
+  font-weight: 800; font-size: 22px; box-shadow: 0 0 20px rgba(122,162,247,.4);
 }
-.glass-step h4 { margin: 14px 0 8px; font-size: 22px; color: var(--text-1); }
-.glass-step p { font-size: 18px; color: var(--text-2); line-height: 1.6; }
+.glass-step h4 { margin: 14px 0 8px; font-size: 26px; color: var(--text-1); }
+.glass-step p { font-size: 22px; color: var(--text-2); line-height: 1.6; }
 .glass-step .tag {
-  display: inline-block; margin-top: 10px; font-size: 14px; padding: 4px 12px;
+  display: inline-block; margin-top: 10px; font-size: 16px; padding: 4px 14px;
   border-radius: 999px; background: rgba(122,162,247,.12); color: var(--accent);
   border: 1px solid rgba(122,162,247,.2);
 }
@@ -103,8 +103,8 @@ body { background: #0f1019; }
 .tech-compare-card.bad::after { background: var(--bad); }
 .tech-compare-card.good { border-top-color: var(--good); }
 .tech-compare-card.good::after { background: var(--good); }
-.tech-compare-card h3 { font-size: 26px; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; color: var(--text-1); }
-.tech-compare-card ul { padding-left: 18px; font-size: 19px; line-height: 1.9; color: var(--text-2); }
+.tech-compare-card h3 { font-size: 30px; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; color: var(--text-1); }
+.tech-compare-card ul { padding-left: 18px; font-size: 22px; line-height: 1.9; color: var(--text-2); }
 .tech-compare-card li::marker { color: var(--text-3); }
 .tech-compare-card.bad li::marker { color: var(--bad); }
 .tech-compare-card.good li::marker { color: var(--good); }
@@ -119,8 +119,8 @@ body { background: #0f1019; }
   content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 3px;
   background: var(--good); border-radius: 3px 0 0 3px;
 }
-.tech-safety h3 { color: var(--good); margin: 0 0 8px; font-size: 24px; }
-.tech-safety p { color: var(--text-2); margin: 0; font-size: 19px; line-height: 1.7; }
+.tech-safety h3 { color: var(--good); margin: 0 0 8px; font-size: 28px; }
+.tech-safety p { color: var(--text-2); margin: 0; font-size: 22px; line-height: 1.7; }
 
 .tech-safety.blue {
   background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.2);
@@ -140,8 +140,8 @@ body { background: #0f1019; }
 
 /* 标签 */
 .tech-tag {
-  display: inline-block; padding: 4px 12px; border-radius: 999px;
-  font-size: 14px; font-weight: 600; letter-spacing: .06em;
+  display: inline-block; padding: 4px 14px; border-radius: 999px;
+  font-size: 16px; font-weight: 600; letter-spacing: .06em;
   background: rgba(247,118,142,.12); color: var(--bad);
   border: 1px solid rgba(247,118,142,.2); margin-right: 6px;
 }
@@ -151,7 +151,7 @@ body { background: #0f1019; }
 
 /* 终端风格代码块 */
 .tech-terminal {
-  font-family: var(--font-mono); font-size: 16px;
+  font-family: var(--font-mono); font-size: 18px;
   background: #0f1019; border: 1px solid rgba(122,162,247,.2);
   border-radius: var(--radius); padding: 20px 24px;
   box-shadow: 0 0 30px rgba(122,162,247,.05) inset;
@@ -164,7 +164,7 @@ body { background: #0f1019; }
 /* 底部标签组 */
 .tag-group { display: flex; gap: 8px; margin-top: 32px; flex-wrap: wrap; justify-content: center; }
 .tag-pill {
-  padding: 8px 20px; border-radius: 999px; font-size: 16px; font-weight: 600;
+  padding: 8px 22px; border-radius: 999px; font-size: 18px; font-weight: 600;
   border: 1px solid; letter-spacing: .04em;
 }
 .tag-pill.blue { background: rgba(122,162,247,.12); color: var(--accent); border-color: rgba(122,162,247,.3); }
@@ -209,7 +209,7 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
         </div>
       </div>
       <div class="anim-fade-right" data-anim="fade-right" style="padding-top:8px">
-        <p class="lede" style="font-size:26px;margin-bottom:20px;color:var(--text-2)">
+        <p class="lede" style="font-size:32px;margin-bottom:20px;color:var(--text-2)">
           想象你要开一家店，但每次开门都要<span class="hl-red">亲自到场</span>，还要留下<span class="hl-red">指纹和身份证</span>...
         </p>
         <div class="stack" style="gap:12px">
@@ -245,7 +245,7 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
         </div>
       </div>
       <div class="anim-fade-right" data-anim="fade-right">
-        <p class="lede" style="font-size:26px;margin-bottom:16px;color:var(--text-2)">
+        <p class="lede" style="font-size:32px;margin-bottom:16px;color:var(--text-2)">
           就像你请了一个<span class="hl-blue">靠谱的中介</span>：
         </p>
         <div class="stack" style="gap:12px">
@@ -262,7 +262,7 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
             <span style="color:var(--text-3)"> — 云端拿到登录凭证，加密后传回你的电脑</span>
           </div>
         </div>
-        <p style="margin-top:16px;color:var(--text-3);font-size:19px">
+        <p style="margin-top:16px;color:var(--text-3);font-size:22px">
           你的电脑全程没参与"申请二维码"这个过程，设备指纹永远不会暴露
         </p>
       </div>
@@ -305,7 +305,7 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
         <p>本地登录成功</p>
       </div>
     </div>
-    <p style="text-align:center;margin-top:28px;color:var(--text-3);font-size:20px" class="anim-fade-up" data-anim="fade-up">
+    <p style="text-align:center;margin-top:28px;color:var(--text-3);font-size:24px" class="anim-fade-up" data-anim="fade-up">
       接下来，我们一步一步拆开看
     </p>
     <div class="notes">五步流程概览，渐变顶部高亮条，hover 上浮效果。</div>
@@ -372,11 +372,11 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
       <div class="card" style="padding:32px;background:var(--grad-soft);border:1px solid var(--border)">
         <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px">
           <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#1a1b26;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;box-shadow:0 0 20px rgba(122,162,247,.4)">5</div>
-          <h3 style="margin:0;font-size:30px;color:var(--text-1)">本地解密并登录</h3>
+          <h3 style="margin:0;font-size:34px;color:var(--text-1)">本地解密并登录</h3>
         </div>
         <div class="grid g2" style="gap:20px">
           <div>
-            <p style="font-size:21px;line-height:1.9;color:var(--text-2)">
+            <p style="font-size:24px;line-height:1.9;color:var(--text-2)">
               1. 你的电脑用本地密钥 <span class="hl-pink">解密</span> 凭证<br>
               2. 将凭证写入微信进程的 <span class="hl-blue">内存</span><br>
               3. 微信"以为"自己已经登录，直接建立连接<br>
@@ -384,8 +384,8 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
             </p>
           </div>
           <div style="background:var(--surface);border-radius:var(--radius);padding:22px;border:1px solid var(--border)">
-            <p style="font-size:16px;color:var(--text-3);margin:0 0 10px;text-transform:uppercase;letter-spacing:.1em">SUMMARY</p>
-            <p style="font-size:22px;font-weight:700;color:var(--text-1);margin:0;line-height:1.5">
+            <p style="font-size:18px;color:var(--text-3);margin:0 0 10px;text-transform:uppercase;letter-spacing:.1em">SUMMARY</p>
+            <p style="font-size:26px;font-weight:700;color:var(--text-1);margin:0;line-height:1.5">
               "云端只负责开门，进门后的事完全由本地接管，云端连门牌号都不知道"
             </p>
           </div>
@@ -443,7 +443,7 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
     </div>
     <div style="margin-top:20px" class="anim-fade-up" data-anim="fade-up">
       <div class="card" style="padding:18px 22px;text-align:center;background:var(--grad-soft);border:1px solid var(--border)">
-        <p style="font-size:21px;color:var(--text-2);margin:0">
+        <p style="font-size:24px;color:var(--text-2);margin:0">
           <strong style="color:var(--text-1)">类比：</strong>云端就像帮你取快递的跑腿小哥 —— 他帮你从驿站取了包裹（二维码），但包裹里的东西（聊天记录）他永远看不到
         </p>
       </div>
@@ -455,10 +455,10 @@ html.scroll-mode .slide { padding: 48px 64px !important; }
   <section class="slide center tc deco-scanlines" data-title="结语">
     <div>
       <div style="font-size:72px;margin-bottom:16px" class="anim-zoom-pop" data-anim="zoom-pop">🎯</div>
-      <h1 class="h1 anim-fade-up" data-anim="fade-up" style="font-size:68px;line-height:1.1">
+      <h1 class="h1 anim-fade-up" data-anim="fade-up" style="font-size:80px;line-height:1.1">
         云端代登的本质
       </h1>
-      <p class="lede anim-fade-up" data-anim="fade-up" style="margin:20px auto 0;max-width:52ch;font-size:28px;color:var(--text-2)">
+      <p class="lede anim-fade-up" data-anim="fade-up" style="margin:20px auto 0;max-width:52ch;font-size:32px;color:var(--text-2)">
         把<span class="hl-pink">"登录的风险"</span>和<span class="hl-blue">"运行的风险"</span>拆成两段，<br>
         让云端替你扛第一段的枪，<br>
         你的电脑只负责第二段的活。
